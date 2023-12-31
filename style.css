@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&family=Rubik:wght@300&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --change-color: #d4d4d4;
+}
+body{
+    height: 100%;
+    width: 100%;
+    font-family: 'Roboto', sans-serif;
+}
+.bg-black{
+    background-color: black;
+    color: white;
+}
+.set-img{
+    height: 100px;
+    margin: 0px 20px;
+}
+h1{
+    font-size: 80px;
+    font-weight: 900;
+}
+.color-change{
+    color: var(--change-color);
+    transition: ease-in 0.5s;
+}
+.timer div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 0px 8px;
+}
+.timer div span{
+    font-size: 25px;
+}
+.timer div p{
+    font-size: 8px;
+}
+#container{
+    margin-top: 20px;
+    /* background: red; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 300px;
+    width: 100%;
+    flex-direction: column;
+}
+#container-2{
+    display: flex;
+    justify-content: center;
+    /* background: blue; */
+    height: 50px;
+    width: 100%;
+}
+#container-3{
+    margin-top: 75px;
+    /* background: pink; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 80px;
+    width: 100%;
+    flex-direction: column;
+}
+#container-4{
+    /* background: rgb(170, 31, 55); */
+    text-align: center;
+    height: 80px;
+    width: 100%;
+    margin-top: 15px;
+
+}
+.timer{
+    display: flex;
+}
+.text-one{
+    color: #d1d5db;
+    display: flex;
+    align-items: center;
+}
+.up-up{
+    display: flex;
+    align-items: center;
+}
+.up{
+    min-width: 600px;
+    /* background: yellow; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.btn{
+    background-color: var(--change-color);
+    color: black;
+    padding: 1rem 1.5rem;
+    outline: none;
+    border: none;
+    border-radius: 10px;
+    font-weight: bold;
+}
+@media only screen and (max-width: 700px) {
+    .container{
+        height: 400px;
+    }
+    h1{
+        font-size: 70px;
+    }
+    .up {
+        flex-direction: column; /* Stack items vertically for smaller screens */
+         /* Center text in the container */
+    }
+}
